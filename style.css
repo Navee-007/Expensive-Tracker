@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: rgb(197, 197, 197);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  height: auto;
+}
+
+.main {
+  background-image: url(https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+  background-position: center;
+  background-size: cover;
+  color: aliceblue;
+  width: 70%;
+
+  border-radius: 10px;
+}
+
+.main-head {
+  font-size: 55px;
+  font-weight: 700;
+  margin: 30px 0px;
+}
+h1 {
+  text-align: center;
+  font-size: 23px;
+  margin-top: 40px;
+}
+
+h2.amount {
+  padding: 12px 63px;
+}
+
+.balance {
+  
+
+  background-color: white;
+  margin: 2rem;
+  color: black;
+  border-radius: 25px;
+
+}
+
+.main-balance {
+  font-size: 35px;
+  background-color: gray;
+  padding: 13px;
+  color: white;
+  border-radius: 20px;
+  font-weight: 900;
+}
+
+.income {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.green{
+  color: green;
+}
+.red{
+  color: red;
+}
+
+ul {
+  padding: 0;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.history {
+  margin: 1rem;
+  padding: 24px 10px;
+  margin-bottom: 37px;
+}
+
+.transaction {
+  margin: 1rem;
+}
+
+.label {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input {
+  text-align: start;
+  width: 14rem;
+  height: 33px;
+  border-radius: 25px;
+  margin: 5px;
+  border: none;
+  padding: 5px 10px;
+  font-weight: 700;
+}
+
+  /* .btn {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    border: none;
+    border: 3px solid rgb(27 46 249);
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .btn :hover{
+    border: none;
+    background-color: blue;
+    color: white;
+
+  } */
+
+  button#submit {
+    
+    background: none;
+    border: none;
+    margin-top: 23px;
+
+}
+
+  
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 15px 20px;
+  transition: all 0.2s ease;
+  background-color: white;
+    border-radius: 50px;
+    color: black;
+}
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(157, 162, 255, 0.5);
+  width: 46px;
+    height: 46px;
+  transition: all 0.3s ease;
+}
+.cta span {
+  position: relative;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.cta:hover:before {
+  width: 100%;
+  background: rgba(157, 162, 255, 0.5);
+}
+.cta:hover svg {
+  transform: translateX(0);
+}
+.cta:active {
+  transform: scale(0.96);
+}
+li {
+  margin: 6px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+  color: black;
+}
+
+.fa-solid {
+  width: 20px;
+  height: 13px;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.plus {
+  border: green solid 5px;
+
+ 
+}
+
+.minus {
+  border: rgb(255, 51, 0) solid 5px;
+}
+
+form#form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.text-1 {
+  font-size: 25px;
+  font-weight: 900;
+  margin: 1px 16px;
+}
+
+h1.text {
+  font-size: 40px;
+  color: black;
+}
+
+li {
+  margin: 6px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: aliceblue; */
+  color: rgb(0, 0, 0);
+  align-items: center;
+  padding: 10px 10px;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.line {
+
+  color: black;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+
+
+/* tab media quary */
+
+
+
+@media screen and (min-width: 1050px) {
+
+  .form-inputs {
+    display: flex;
+  }
+  body{
+    height: 100vh;
+  }
+ 
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  form#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+  .text-1{
+    font-size: 17px;
+  }
+
+  .main-balance {
+    font-size: 17px;
+  }
+}

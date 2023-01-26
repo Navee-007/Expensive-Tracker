@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expansive Tracker</title>
+  <!-- font cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link css -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div class="main">
+    <h1 class=" main-head">Expense Tracker</h1>
+    <!-- balance section -->
+    <div class="balance">
+      <p class="title text-1">YOUR BALANCE</p>
+      <h2  class="  amount"><span class="main-balance" id="balance">$</span></h2>
+      <div class="income">
+        <p class=" para text-1">INCOME<br><span class="green" id="plus">$</span></p>
+        <div class="line">/</div>
+        <p class="para-1 text-1">EXPENSE<br><span  class="red" id="minus">$</span></p>
+      </div>
+    </div>
+   
+    <!-- transaction section -->
+    <div class="transaction">
+      <h2 class="text-1">Add New transaction</h2>
+      <hr>
+      <!-- label -->
+      <!-- text -->
+      <form id="form">
+      <div class="form-inputs">
+        <div class="label">
+          <label for="text" class="lable-text text-1">text:</label>
+          <input type="text"class="input" id="transaction" placeholder="please add a text">
+          </div>
+          <!-- amount -->
+          <div class="label">
+          <label for="amount"  class="lable-text text-1">Amount:</label>
+          <input type="number" id="amount" class="input"placeholder="please add a amount">
+          </div>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn" id="submit" ><a href="#" class="cta">
+          <span>Click me</span>
+          <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </a></button>
+      </div>
+    </div>
+    </form>
+
+     <!-- History section -->
+     <div class="history">
+      <h2 class="sec text-1">History</h2>
+      <hr>
+      <div class="container">
+        <ul id="cash">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- script.js -->
+  <script src="./script.js"></script>
+</body>
+</html>
